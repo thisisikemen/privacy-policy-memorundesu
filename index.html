@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>居酒屋（店舗名を入力）</title>
+    <!-- 外部CSSのリンク -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts（任意） -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">居酒屋（店舗名を入力）</a>
+            </div>
+            <!-- ハンバーガーメニューアイコン -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- ナビゲーションメニュー -->
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#commitment" class="nav-link">こだわり</a></li>
+                    <li><a href="#menu" class="nav-link">メニュー</a></li>
+                    <li><a href="#photos" class="nav-link">写真</a></li>
+                    <li><a href="#information" class="nav-link">店舗情報</a></li>
+                    <li><a href="#access" class="nav-link">アクセス</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- こだわりセクション -->
+        <section id="commitment" class="section">
+            <div class="container">
+                <h2>こだわり</h2>
+                <p>貴店のこだわりについての説明文をここに追加します。新鮮な食材や調理方法など、お店の特色をアピールしましょう。</p>
+            </div>
+        </section>
+
+        <!-- メニューセクション -->
+        <section id="menu" class="section">
+            <div class="container">
+                <h2>メニュー</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/yakitori.jpg" alt="おすすめ料理1">
+                        <h3>おすすめ料理1</h3>
+                        <p>料理の説明文をここに追加します。</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/yakisoba.jpg" alt="おすすめ料理2">
+                        <h3>おすすめ料理2</h3>
+                        <p>料理の説明文をここに追加します。</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/haiboru.jpg" alt="おすすめ料理3">
+                        <h3>おすすめ料理3</h3>
+                        <p>料理の説明文をここに追加します。</p>
+                    </div>
+                </div>
+                <!-- 「全てのメニューを見る」ボタンをメニューグリッド内に追加 -->
+                <div class="menu-button-container">
+                    <a href="all-menu.html" class="btn see-all-menu">全てのメニューを見る →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 写真セクション -->
+        <section id="photos" class="section">
+            <div class="container">
+                <h2>写真（例）</h2>
+                <div class="photo-gallery">
+                    <img src="images/gaikan.jpg" alt="店内写真1">
+                    <img src="images/gaikan2.jpg" alt="店内写真2">
+                    <img src="images/gaikan3.jpg" alt="料理写真3">
+                    <img src="images/tensyu.jpg" alt="料理写真4">
+                    <!-- 追加の写真 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 店舗情報セクション -->
+        <section id="information" class="section">
+            <div class="container">
+                <h2>店舗情報（例）</h2>
+                <ul class="info-list">
+                    <li><strong>住所：</strong>〒370-0801 群馬県高崎市上並榎町9-1 高崎経済大学</li>
+                    <li><strong>電話番号：</strong>000-0000-0000</li>
+                    <li><strong>営業時間：</strong>火～日　18:00～翌1:00（L.O.24:00、ドリンクL.O.24:40）</li>
+                    <li><strong>定休日：</strong>月曜日</li>
+                    <li><strong>座席数・お席の種類：</strong>総席数24席、貸切可能人数20名～、カウンター席あり</li>
+                    <li><strong>禁煙・喫煙：</strong>店舗へお問い合わせください</li>
+                    <li><strong>携帯・Wi-Fi・電源：</strong>携帯の電波（au、ソフトバンク、NTTドコモ）、無料Wi-Fi、テーブルに電源あり</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- アクセスセクション -->
+        <section id="access" class="section">
+            <div class="container">
+                <h2>アクセス</h2>
+                <!-- Googleマップの埋め込み（任意） -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.6243104882283!2d138.97443057601876!3d36.345654072380185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601e8dcba6edc1bb%3A0x655edc0b8f62421!2z6auY5bSO57WM5riI5aSn5a2m!5e0!3m2!1sja!2sjp!4v1730322177200!5m2!1sja!2sjp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="access-details">
+                    <p><strong>交通手段：</strong>ここに交通手段を入力（交通機関等）</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 居酒屋テンプレート. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">LINE</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 外部JavaScriptのリンク -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
