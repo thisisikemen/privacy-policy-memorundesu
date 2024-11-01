@@ -60,3 +60,17 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// 背景スライダーの設定
+const bgImages = document.querySelectorAll('.background-slider .bg-image');
+let currentBg = 0;
+const totalBg = bgImages.length;
+const bgInterval = 4000; // 4秒
+
+function showNextBg() {
+    bgImages[currentBg].classList.remove('active');
+    currentBg = (currentBg + 1) % totalBg;
+    bgImages[currentBg].classList.add('active');
+}
+
+setInterval(showNextBg, bgInterval);
