@@ -43,7 +43,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.nav ul li a');
 
-window.addEventListener('scroll', () => {
+function updateActiveNav() {
     let current = '';
 
     sections.forEach(section => {
@@ -55,11 +55,29 @@ window.addEventListener('scroll', () => {
 
     navLi.forEach(a => {
         a.classList.remove('active');
-        if (a.getAttribute('href') === `#${current}`) {
+        const href = a.getAttribute('href');
+        if (href === `#${current}` || href === `${window.location.pathname}#${current}`) {
             a.classList.add('active');
         }
     });
-});
+}
+
+function setActiveNav() {
+    if (window.location.pathname.endsWith('all-menu.html')) {
+        // 「メニュー」をアクティブに設定
+        navLi.forEach(a => {
+            a.classList.remove('active');
+            if (a.textContent.trim() === 'メニュー') {
+                a.classList.add('active');
+            }
+        });
+    } else {
+        updateActiveNav();
+        window.addEventListener('scroll', updateActiveNav);
+    }
+}
+
+window.addEventListener('load', setActiveNav);
 
 // 背景スライダーの設定
 const bgImages = document.querySelectorAll('.background-slider .bg-image');
