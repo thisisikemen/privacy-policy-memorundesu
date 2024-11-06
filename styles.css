@@ -163,7 +163,7 @@ main {
 /* スマホ用の調整 */
 @media (max-width: 768px) {
     #commitment .container p {
-        font-size: 0.9em;
+        font-size: 0.8em;
         line-height: 1.4;
     }
 }
